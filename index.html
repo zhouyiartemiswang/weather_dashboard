@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="w3-bar w3-black w3-large w3-padding-16">
+        <h1>Weather Dashboard</h1>
+    </div>
+
+    <!-- Side Bar -->
+    <aside class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+
+        <form class="w3-container">
+            <label><b>Search for a city</b></label>
+            <input class="w3-input w3-border w3-light-grey" type="text">
+
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+    </aside>
+
+    <main style="margin-left:27%">
+        <section class="w3-panel w3-card">
+            <p id="city"><span id="currentDate"></span></p>
+        </section>
+
+        <section>
+            <span class="w3-left">5-Day Forecast</span>
+            <br>
+            <section class="w3-panel w3-card w3-left" style="width: 18%">
+                <span>date 1</span>
+            </section>
+            <section class="w3-panel w3-card w3-left" style="width: 18%">
+                <span>date 2</span>
+            </section>
+            <section class="w3-panel w3-card w3-left" style="width: 18%">
+                <span>date 3</span>
+            </section>
+            <section class="w3-panel w3-card w3-left" style="width: 18%">
+                <span>date 4</span>
+            </section>
+            <section class="w3-panel w3-card w3-left" style="width: 18%">
+                <span>date 5</span>
+            </section>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="Assets/script.js"></script>
+</body>
+
+</html>
