@@ -44,6 +44,11 @@ $(document).ready(function () {
         // Get list of cities from local storage
         cityList = JSON.parse(localStorage.getItem("cityList")) || [];
 
+        // If list is not empty, display the last search result
+        if (cityList) {
+            getData(cityList[cityList.length - 1]);
+        }
+        
         // Display each city in local storage
         for (var i = 0; i < cityList.length; i++) {
             displayInput(cityList[i]);
@@ -159,7 +164,7 @@ $(document).ready(function () {
 
     // Display future weather
     function displayFutureWeather() {
-        
+
         for (var i = 1; i <= 5; i++) {
             var futureDate = moment().add(i, "d").format("l");
             $("#futureDay" + i).text(futureDate);
