@@ -22,11 +22,13 @@
 
         <form class="w3-container">
             <label><b>Search for a city</b></label>
-            <input class="w3-input w3-border w3-light-grey" type="text">
+            <input id="cityInput" class="w3-input w3-border w3-light-grey" type="text">
 
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button id="search-btn"><i class="fa fa-search"></i></button>
         </form>
 
+        <div id="display-city-list" class="w3-bar-block w3-border w3-light-grey" style="width:100%">
+        </div>
     </aside>
 
     <main style="margin-left:27%">
