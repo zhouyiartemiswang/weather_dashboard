@@ -75,7 +75,7 @@ $(document).ready(function () {
             }
 
 
-            var currentWeatherURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+            var currentWeatherURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
             $.ajax({
                 url: currentWeatherURL,
                 method: "GET"
@@ -86,7 +86,7 @@ $(document).ready(function () {
                 var cityLatitude = currentWeatherResponse.coord.lat;
                 var cityLongitude = currentWeatherResponse.coord.lon;
 
-                var futureWeatherURL = "http://api.openweathermap.org/data/2.5/onecall?lat=" + cityLatitude + "&lon=" + cityLongitude + "&units=imperial&exclude=minutely,hourly&appid=" + apiKey;
+                var futureWeatherURL = "https://api.openweathermap.org/data/2.5/onecall?lat=" + cityLatitude + "&lon=" + cityLongitude + "&units=imperial&exclude=minutely,hourly&appid=" + apiKey;
 
                 $.ajax({
                     url: futureWeatherURL,
