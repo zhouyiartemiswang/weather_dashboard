@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Assets/style.css">
     <title>Weather Dashboard</title>
 </head>
@@ -13,26 +14,28 @@
 <body>
 
     <!-- Header -->
-    <div class="w3-bar w3-black w3-large w3-padding-16">
+    <div class="w3-bar w3-light-grey w3-text-grey w3-large w3-padding-16 w3-mobile">
         <h1>Weather Dashboard</h1>
     </div>
 
     <!-- Side Bar -->
-    <aside class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+    <aside class="w3-sidebar w3-bar-block w3-card w3-mobile" style="width:20%">
 
-        <form class="w3-container">
-            <label><b>Search for a city</b></label>
-            <input id="cityInput" class="w3-input w3-border w3-light-grey" type="text">
+        <form class="w3-container w3-mobile">
 
-            <button id="search-btn"><i class="fa fa-search"></i></button>
+            <!-- <label><b>Search for a city</b></label> -->
+            <input id="cityInput" class="w3-input w3-border" type="text" placeholder="Enter city here" style="width:80%">
+            <button id="search-btn" class="w3-button w3-border w3-round w3-display-topright"><i class="fa fa-search"></i></button>
+
         </form>
-
-        <div id="display-city-list" class="w3-bar-block w3-border w3-light-grey" style="width:100%">
-        </div>
+        <section style="margin-left:4.5%">
+            <section id="display-city-list" class="w3-bar-block w3-border" style="width:95%">
+            </section>
+        </section>
     </aside>
 
-    <main style="margin-left:27%">
-        <section class="w3-panel w3-card">
+    <main style="margin-left:25%">
+        <section class="w3-panel w3-card" style="width:93%">
 
             <span id="header"></span>
             <img id="weatherIcon" src="#" alt="weather icon">
@@ -44,33 +47,34 @@
         </section>
 
         <section>
-            <span class="w3-left">5-Day Forecast</span>
+            <span id="forecast-header" class="w3-left">5-Day Forecast</span>
             <br>
-            <section class="w3-panel w3-card w3-left" style="width: 18%">
+            <br>
+            <section class="w3-panel w3-card w3-left forecast" style="width: 15%">
                 <p id="futureDay1"></p>
                 <img id="icon1" src="#" alt="weather icon">
                 <p id="temp1"></p>
                 <p id="humidity1"></p>
             </section>
-            <section class="w3-panel w3-card w3-left" style="width: 18%">
+            <section class="w3-panel w3-card w3-left forecast" style="width: 15%">
                 <p id="futureDay2"></p>
                 <img id="icon2" src="#" alt="weather icon">
                 <p id="temp2"></p>
                 <p id="humidity2"></p>
             </section>
-            <section class="w3-panel w3-card w3-left" style="width: 18%">
+            <section class="w3-panel w3-card w3-left forecast" style="width: 15%">
                 <p id="futureDay3"></p>
                 <img id="icon3" src="#" alt="weather icon">
                 <p id="temp3"></p>
                 <p id="humidity3"></p>
             </section>
-            <section class="w3-panel w3-card w3-left" style="width: 18%">
+            <section class="w3-panel w3-card w3-left forecast" style="width: 15%">
                 <p id="futureDay4"></p>
                 <img id="icon4" src="#" alt="weather icon">
                 <p id="temp4"></p>
                 <p id="humidity4"></p>
             </section>
-            <section class="w3-panel w3-card w3-left" style="width: 18%">
+            <section class="w3-panel w3-card w3-left forecast" style="width: 15%">
                 <p id="futureDay5"></p>
                 <img id="icon5" src="#" alt="weather icon">
                 <p id="temp5"></p>

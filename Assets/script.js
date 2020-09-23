@@ -54,7 +54,7 @@ $(document).ready(function () {
         //     // console.log("return");
         //     return;
         // }
-        var newCity = $("<span>", { id: cityInput, class: "w3-bar-item w3-hover-grey" });
+        var newCity = $("<span>", { id: cityInput, class: "w3-bar-item w3-hover-light-grey" });
         newCity.text(cityInput);
         // console.log(cityInput);
         $("#display-city-list").append(newCity);

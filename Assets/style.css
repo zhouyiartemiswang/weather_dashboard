@@ -1,8 +1,47 @@
+body {
+    font-family: 'Noto Serif', serif;
+    font-size: 1vw;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2vw;
+
+}
+
+input {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+#search-btn {
+    margin-top: 1vw;
+    margin-right: 1vw;
+}
+
+#ddisplay-city-list {
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
 main {
     display: none;
+    /* display: block; */
 }
+
+#header, #forecast-header {
+    font-size: 1.3vw;
+}
+
+h1 {
+    text-align: center;
+}
+
 
 #uvi {
     padding: 0.5vw;
     border-radius: 0.5vw;
+}
+
+.forecast {
+    margin: 1vw;
 }
