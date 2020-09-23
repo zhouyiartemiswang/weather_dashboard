@@ -44,11 +44,10 @@ $(document).ready(function () {
         // Get list of cities from local storage
         cityList = JSON.parse(localStorage.getItem("cityList")) || [];
 
-        // If list is not empty, display the last search result
+        // If list is not empty, display the last search
         if (cityList) {
             getData(cityList[cityList.length - 1]);
         }
-        
         // Display each city in local storage
         for (var i = 0; i < cityList.length; i++) {
             displayInput(cityList[i]);
@@ -155,9 +154,9 @@ $(document).ready(function () {
         } else if (currentUVI >= 5 && currentUVI < 7) {
             $("#uvi").css("background-color", "#FAA400"); // orange 5-7
         } else if (currentUVI >= 7 && currentUVI < 10) {
-            $("#uvi").css("background-color", "#FAA400"); // red 8-10
+            $("#uvi").css("background-color", "#F21017"); // red 8-10
         } else {
-            $("#uvi").css("background-color", "#DE388F"); // magenta 11+
+            $("#uvi").css("background-color", "DE388F"); // magenta 11+
         }
 
     }
