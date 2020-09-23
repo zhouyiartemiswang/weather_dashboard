@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif&display=swap" rel="stylesheet">
@@ -23,18 +24,20 @@
 
         <form class="w3-container w3-mobile">
 
-            <!-- <label><b>Search for a city</b></label> -->
-            <input id="cityInput" class="w3-input w3-border" type="text" placeholder="Enter city here" style="width:80%">
-            <button id="search-btn" class="w3-button w3-border w3-round w3-display-topright"><i class="fa fa-search"></i></button>
+            <input id="cityInput" class="w3-input w3-border" type="text" placeholder="Enter city here"
+                style="width:80%">
+            <button id="search-btn" class="w3-button w3-border w3-round w3-display-topright"><i
+                    class="fa fa-search"></i></button>
 
         </form>
-        <section style="margin-left:4.5%">
-            <section id="display-city-list" class="w3-bar-block w3-border" style="width:95%">
-            </section>
+
+        <section id="display-city-list" class="w3-bar-block w3-border" style="width:auto">
         </section>
     </aside>
 
     <main style="margin-left:25%">
+
+        <!-- Current Weather Display -->
         <section class="w3-panel w3-card" style="width:93%">
 
             <span id="header"></span>
@@ -46,35 +49,36 @@
 
         </section>
 
+        <!-- Forecast Display -->
         <section>
             <span id="forecast-header" class="w3-left">5-Day Forecast</span>
             <br>
             <br>
-            <section class="w3-panel w3-card w3-left forecast" style="width: 15%">
+            <section class="w3-panel w3-card w3-left forecast" style="width: 16%">
                 <p id="futureDay1"></p>
                 <img id="icon1" src="#" alt="weather icon">
                 <p id="temp1"></p>
                 <p id="humidity1"></p>
             </section>
-            <section class="w3-panel w3-card w3-left forecast" style="width: 15%">
+            <section class="w3-panel w3-card w3-left forecast" style="width: 16%">
                 <p id="futureDay2"></p>
                 <img id="icon2" src="#" alt="weather icon">
                 <p id="temp2"></p>
                 <p id="humidity2"></p>
             </section>
-            <section class="w3-panel w3-card w3-left forecast" style="width: 15%">
+            <section class="w3-panel w3-card w3-left forecast" style="width: 16%">
                 <p id="futureDay3"></p>
                 <img id="icon3" src="#" alt="weather icon">
                 <p id="temp3"></p>
                 <p id="humidity3"></p>
             </section>
-            <section class="w3-panel w3-card w3-left forecast" style="width: 15%">
+            <section class="w3-panel w3-card w3-left forecast" style="width: 16%">
                 <p id="futureDay4"></p>
                 <img id="icon4" src="#" alt="weather icon">
                 <p id="temp4"></p>
                 <p id="humidity4"></p>
             </section>
-            <section class="w3-panel w3-card w3-left forecast" style="width: 15%">
+            <section class="w3-panel w3-card w3-left forecast" style="width: 16%">
                 <p id="futureDay5"></p>
                 <img id="icon5" src="#" alt="weather icon">
                 <p id="temp5"></p>
